@@ -1,9 +1,8 @@
-const express = require('express');
-const app = express();
-const routes = require('./route');
 
-app.use('/', routes);
+const { app } = require('./configure');
 
-app.listen(process.env.PORT, () =>
+
+
+app.listen(process.env.PORT || 3000, () =>
     console.log(`APP running on port 3000`)
 );

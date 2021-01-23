@@ -6,12 +6,14 @@
   "scripts": {
     "start": "node .",
     "dev": "nodemon .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "http-status": "^1.5.0"
+    "http-status": "^1.5.0",
+    "jest": "^26.6.3",
+    "supertest": "^6.1.1"
   }
 }
