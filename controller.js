@@ -6,6 +6,12 @@ const StartGame = async (req, res) => {
         .send({ message: 'Valor inicial actualizado' });
 };
 
+const view = async (req, res) => {
+    
+    return res
+        .status(200)
+        .send({ message: '/start/:number  ruta para iniciar el juego',message2:'/play/:number  ruta para jugar' });
+};
 const playGame = async (req, res) => {
     let num = req.params.number;
     let correcto = process.env.CORRECTO;
@@ -30,5 +36,6 @@ const playGame = async (req, res) => {
 
 module.exports = {
     StartGame,
-    playGame
+    playGame,
+    view
 };
